@@ -5,6 +5,6 @@ CREATE TABLE students (
     nom VARCHAR(100) NOT NULL,
     cognom VARCHAR(100) DEFAULT NULL,
     age INT DEFAULT 0,
-    cicle VARCHAR (100) NOT NULL,
-    any INT DEFAULT 0
+    cicle VARCHAR(100) NOT NULL,
+    `any` INT DEFAULT 0
 );
