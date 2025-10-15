@@ -28,13 +28,13 @@ public class StudentsRepository {
             student.setCognom(rs.getString("cognom"));
             student.setAge(rs.getInt("age"));
             student.setCicle(rs.getString("cicle"));
-            student.setAny(rs.getInt("`any`"));
+            student.setAny(rs.getInt("any"));
             return student;
         }
     }
     
     public List<students> findAll(){
-        String sql = "SELECT * FROM students";
+        String sql = "select * from students;";
         return jdbcTemplate.query(sql, new StudentsRowMapper());
     }
 
