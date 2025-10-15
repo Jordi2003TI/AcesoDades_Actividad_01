@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class studentsController {
 
     @Autowired
-    StudentsRepository studentRepository;
+    StudentsRepository studentsRepository;
 
     @GetMapping("/students")
     public String getStudent() {
@@ -26,7 +26,7 @@ public class studentsController {
 
     @PostMapping("/students/batch")
     public String postStudent() {
-        studentRepository.save();
+        studentsRepository.save();
         return "Endpoint post";
     }
 }

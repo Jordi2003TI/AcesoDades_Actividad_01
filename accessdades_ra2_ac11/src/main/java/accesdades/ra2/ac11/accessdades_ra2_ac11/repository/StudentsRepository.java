@@ -15,12 +15,12 @@ public class StudentsRepository {
     
 
     public void finalAll(){
-        //String sql = "SELECT * FROM students";
-        //jdbcTemplate.query(sql, );
+        String sql = "SELECT * FROM students";
+        // jdbcTemplate.query(sql, );
     }
 
     public void save(){
-        String sql = "insert into students (nom, cognom, age, cicle, `any` ) VALUES (?,?,?,?,?)";
+        String sql = "insert into students (nom, cognom, age, cicle, `any`) VALUES (?,?,?,?,?)";
         jdbcTemplate.update(sql, "Jordi", "Masip", 21, "DAM2B", 2003);
     }
 }
